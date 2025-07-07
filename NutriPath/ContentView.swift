@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 20){
-            Image(systemName: "fork.knife")
-                .font(.largeTitle)
-            Text("NutriPath")
-                .font(.largeTitle)
+        NavigationStack {
+            VStack(spacing: 20){
+                Image(systemName: "fork.knife")
+                    .font(.largeTitle)
+                Text("NutriPath iOS App")
+                    .font(.largeTitle)
+            }
         }
-        .padding()
+        .navigationTitle("NutriPath")
     }
 }
 
